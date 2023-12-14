@@ -26004,18 +26004,12 @@ function tick() {
     });
     ws?.send(JSON.stringify({ loonState: state }));
 }
-// Regular middleware
-// Note it's app.ws.use and not app.use
 app.ws.use(function (ctx, next) {
-    // return `next` to pass the context (ctx) on to the next ws middleware
     return next(ctx);
 });
 // Using routes
 app.ws.use(route.all("/", function (ctx) {
-    // `ctx` is the regular koa context created from the `ws` onConnection `socket.upgradeReq` object.
-    // the websocket is added to the context on `ctx.websocket`.
     ctx.websocket.on("message", function (message) {
-        // do something with the message from client
         const msg = JSON.parse(message);
         if (msg.hasOwnProperty("subscribe")) {
             console.log(`Subscribed to channel ${msg.subscribe}`);

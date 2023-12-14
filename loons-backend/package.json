@@ -2,9 +2,9 @@
   "name": "loons-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
   "scripts": {
-    "dev": "npx rollup -c; node ./output/index.js"
+    "dev": "npx rollup -c && node ./output/index.js",
+    "start": "npx rollup -c && node ./output/index.js"
   },
   "keywords": [],
   "author": "",
