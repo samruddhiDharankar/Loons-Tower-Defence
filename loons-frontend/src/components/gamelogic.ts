@@ -1,7 +1,7 @@
 import { useGameState } from "./gameState";
 import { LoonStateMessage, Position } from "./types";
 
-const WS_URL = "ws://workable-visitor-production.up.railway.app";
+const WS_URL = "wss://workable-visitor-production.up.railway.app";
 
 export function init() {
   let { getState, setState } = useGameState;
