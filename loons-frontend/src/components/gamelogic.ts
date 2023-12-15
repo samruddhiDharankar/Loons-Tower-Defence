@@ -1,12 +1,14 @@
 import { useGameState } from "./gameState";
 import { LoonStateMessage, Position } from "./types";
 
+const WS_URL = "ws://workable-visitor-production.up.railway.app";
+
 export function init() {
   let { getState, setState } = useGameState;
   let { ws, mergePatch, shootInterval } = getState();
   if (ws !== undefined) return;
 
-  ws = new WebSocket("ws://localhost:4000/");
+  ws = new WebSocket(WS_URL);
 
   ws.onmessage = (msg: MessageEvent<LoonStateMessage>) => {
     mergePatch(JSON.parse(msg.data).loonState);
