@@ -19,7 +19,7 @@
 cd loons-frontend
 ```
 ```shell
-npm intall
+npm install
 ```
 ```shell
 npm run dev
@@ -30,7 +30,7 @@ npm run dev
 cd loons-backend
 ```
 ```shell
-npm intall
+npm install
 ```
 ```shell
 npx rollup -c; node .\output\index.js
