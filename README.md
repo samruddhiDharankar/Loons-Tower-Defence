@@ -7,10 +7,10 @@
 ![1](https://github.com/samruddhiDharankar/Pronto-Loons-Tower-Defence/assets/30197414/48c98225-0dcd-45f9-878a-c54fee4c32c4)
 
 ## 2. Click on the canvas to place the turret. 
-### Level 1 turrets are red in color. Turrets will start targeting the loons with green laser.
+### Level 1 turrets are red in color. Level 1 turrets will start targeting the Level 1 loons with green laser. They won't shoot the Level 2 Loons.
 ![2](https://github.com/samruddhiDharankar/Pronto-Loons-Tower-Defence/assets/30197414/910da79e-c79b-4379-ae8e-5f7a25087afb)
 
-## 3. Level 2 turrets should target the Level 2 Loons
+## 3. Upgrading turret to Level 2 which will target the Level 2 Loons
 ### If you click once on the Level 1 turret i.e. the red square, the turret will get upgraded to Level 2 and change its color to blue. This Level 2 turret will now target the Level 2 Loon
 ![3](https://github.com/samruddhiDharankar/Pronto-Loons-Tower-Defence/assets/30197414/b61581c4-d825-4720-9571-dc3c44ae33f4)
 
